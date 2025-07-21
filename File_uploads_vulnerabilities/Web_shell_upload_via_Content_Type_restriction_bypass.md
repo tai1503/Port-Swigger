@@ -16,22 +16,22 @@
 **Đặt giả thuyết**
 -	Kiểm tra xem liệu ta có thể upload và thực thi một file php bằng cách tạo một file tên test.php với nội dung <?php phpinfo(); ?> và upload lên server.
 
-![img6](./img/lab1/img6.png)
+![img3](./img/lab1/img6.png)
 
 **Kiểm tra giả thuyết**
 - Sau khi upload, ta nhận được phản hồi từ phía server kiểu file `application/octet-stream` chỉ cho phép upload các file kiểu `image/png, image/jpeg`
 
-img
+![img4](./img/lab2/img1.png)
 
 - Có vẻ như server căn cứ vào header `Content-Type` để nhận diện loại file
 - Thử thay đổi nội dung header thành **image/png** hoặc **image/jpeg** và upload lại file.
 
-img
+![img5](./img/lab2/img2.png)
 
 - Kết quả upload file thành công, thử truy cập đến file thông qua phương thức GET để xem liệu mã PHP có được thực thi không?
 - Mã PHP đã được thực thi tiếp theo ta tiến hành RCE và đọc nội dung tệp tin bí mật
 
-img
+![img6](./img/lab2/img3.png)
 
 ## 3. Tiến hành khai thác
 - Tạo một file tên _shell.php_ với nội dung là đoạn code php:
@@ -40,12 +40,11 @@ img
 
 Đoạn code cho phép thực thi câu lệnh hệ thống, trong đó x là tham số ta có thể truyền vào qua URL.
 
-img
+![img7](./img/lab2/img4.png)
 
 - Truyền tham số *'x'* để đọc nội dung tệp tin bí mật `x=cat%20/home/carlos/secret`
 
-img
-
+![img8](./img/lab2/img5.png)
 
 
 
