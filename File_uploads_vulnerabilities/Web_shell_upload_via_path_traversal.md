@@ -1,7 +1,7 @@
 ## 1. Thông tin bài lab
 - Tên lab: **Web shell upload via path traversal**
 - Loại lỗ hổng: Path Traversal, File upload -> RCE (Remote Code Execution)
-- Link bài lab: [Web shell upload via path traversal](https://portswigger.net/web-security/file-upload/lab-file-upload-web-shell-upload-via-content-type-restriction-bypass](https://portswigger.net/web-security/file-upload/lab-file-upload-web-shell-upload-via-path-traversal)
+- Link bài lab: [Web shell upload via path traversal](https://portswigger.net/web-security/file-upload/lab-file-upload-web-shell-upload-via-content-type-restriction-bypass)
 - **Mục tiêu**: Upload webshell vào thư mục thực thi mã PHP, chiếm quyền điều khiển server và đọc nội dung tệp tin bí mật _**/home/carlos/secret**_
 ## 2. Phân tích ban đầu
 **Chức năng ứng dụng:** 
