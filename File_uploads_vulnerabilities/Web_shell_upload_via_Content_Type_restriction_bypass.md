@@ -18,12 +18,13 @@
 
 ![img3](./img/lab1/img6.png)
 
-**Kiểm tra giả thuyết**
 - Sau khi upload, ta nhận được phản hồi từ phía server kiểu file `application/octet-stream` chỉ cho phép upload các file kiểu `image/png, image/jpeg`
 
 ![img4](./img/lab2/img1.png)
 
-- Có vẻ như server căn cứ vào header `Content-Type` để nhận diện loại file
+- Có vẻ như server căn cứ vào header `Content-Type` để nhận diện loại file. Thử thay đổi nội dung header sao cho phù hợp với yêu cầu server nhưng vẫn có thể thực thi mã PHP.
+
+**Kiểm tra giả thuyết**
 - Thử thay đổi nội dung header thành **image/png** hoặc **image/jpeg** và upload lại file.
 
 ![img5](./img/lab2/img2.png)
