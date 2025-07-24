@@ -1,6 +1,6 @@
 ## 1. Thông tin bài lab
 - Tên lab: **Web shell upload via extension blacklist bypass**
-- Loại lỗ hổng: Path Traversal, File upload -> RCE (Remote Code Execution)
+- Loại lỗ hổng: File upload -> RCE (Remote Code Execution)
 - Link bài lab: [Web shell upload via extension blacklist bypass](https://portswigger.net/web-security/file-upload/lab-file-upload-web-shell-upload-via-extension-blacklist-bypass)
 - **Mục tiêu**: Upload webshell vào thư mục thực thi mã PHP, chiếm quyền điều khiển server và đọc nội dung tệp tin bí mật _**/home/carlos/secret**_
 ## 2. Phân tích ban đầu
