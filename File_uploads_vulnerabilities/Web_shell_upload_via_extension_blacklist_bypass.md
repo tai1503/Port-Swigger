@@ -17,30 +17,30 @@
 -	Kiểm tra xem liệu ta có thể upload và thực thi một file php bằng cách tạo một file tên _test.php_ với nội dung `<?php phpinfo(); ?>` và upload lên server.
 - Không thể upload file .php lên server
 
-img
+![img3](./img/lab4/img1.png)
 
 - Ở đây, ta sử dụng file **.htaccsess** để thay đổi config trong nội bộ thư mục chứa file đó và các thư mục con cho phép server xử lý các file theo mong muốn của ta. Sau đó upload file chứa mã khai thác theo config của ta để thực hiện RCE.
 
 **Kiểm tra giả thuyết**
 - Ta upload file **.htaccess** cấu hình cho server xử lý các file có đuôi **.test** xử lý như một file **.php**
 
-img
+![img4](./img/lab4/img2.png)
 
 - File **.htaccess** đã được upload thành công.
 
-img
+![img5](./img/lab4/img3.png)
 
 - Sau đó, ta upload một file có đuôi **.test** chữa mã PHP để thử xem liệu nó có thể thực thi mã PHP hay không?
 - Ta có thể thấy file **.test** đã được thực thi. Vậy khi ta upload file **.test** thì có thể thực hiện RCE.
 
-img
-img
+![img6](./img/lab4/img4.png)
+![img7](./img/lab4/img5.png)
 
 ## 3. Tiến hành khai thác
 - Upload file **shell.test** để thực hiện đọc tệp tin bí mật với nội dung: `<?php echo system($_GET['x']) ?>`
 
-img
+![img8](./img/lab4/img6.png)
 
 - Truyền tham số *'x'* để đọc nội dung tệp tin bí mật `x=cat%20/home/carlos/secret`
 
-img
+![img9](./img/lab4/img7.png)
