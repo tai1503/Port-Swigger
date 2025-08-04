@@ -28,6 +28,7 @@
 ![img5](./img/lab2/img2.png)
 
 - Vậy nếu ta truyền một đường dẫn tuyệt đối thì liệu có thể đọc được nội dung file không?
+
 **Kiểm tra giả thuyết**
 - Truyền đường dẫn tuyệt đối vào parameter **filename=/etc/passwd**
 - Kết quả, ta đã đọc được nội dung của tệp tin -> Hoàn thành bài lab
