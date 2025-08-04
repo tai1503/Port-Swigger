@@ -21,6 +21,7 @@
 
 ![img4](./img/parameter.png)
 
+## 3. Tiến hành khai thác
 **Đặt giả thuyết**
 - Qua đó, ta đưa ra giả thuyết:
   - **GT1:** Liệu có thể đọc được nội dung file với filename khác hay không?
