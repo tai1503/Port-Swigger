@@ -26,3 +26,13 @@
 
 ![img5](./img/lab3/img1.png)
 ![img6](./img/lab3/img2.png)
+
+**Đặt giả thiết**
+- Theo hướng dẫn của bài lab, server chỉ thực hiện loại bỏ lần lượt các chuỗi ký tự **../** trước khi thực thi.
+- Vậy liệu rằng có thể làm cho chuỗi kí tự **../** xuất hiện sau khi loại bỏ không?
+
+**Kiểm tra giả thuyết**
+- Nếu ta nhập chuỗi **....//**, vậy nếu server chỉ loại bỏ chuỗi kí tự **../** th ta còn chuỗi **../**
+- Sau khi thử nghiệm, ta đã đọc được nội dung tệp -> Hoàn thành bài lab
+
+![img7](./img/lab3/img3.png)
