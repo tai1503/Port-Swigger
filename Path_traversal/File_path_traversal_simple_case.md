@@ -7,7 +7,7 @@
 **Chức năng ứng dụng:** 
 - Giao diện ứng dụng trưng bày các sản phẩm:
 
-![img1](./img/backgorund_app.png)
+![img1](./img/background_app.png)
 
 - Sau khi lựa chọn nút _View details_ hiển thị hình ảnh và miêu tả tương ứng
 
@@ -15,11 +15,11 @@
 
 - Khi đó, thông qua Burpsuite, ta bắt được một số gói tin lấy thông tin về sản phẩm, hình ảnh mô tả sản phẩm
 
-![img3](./img/func_app.png)
+![img3](./img/http_request.png)
 
 - Quan sát thấy có gói tin có thể load được file ảnh và xem nội dung file tại đường dẫn **/image** và tham số đưa vào là **filename**.
 
-![img4](./img/func_app.png)
+![img4](./img/parameter.png)
 
 **Đặt giả thuyết**
 - Qua đó, ta đưa ra giả thuyết:
