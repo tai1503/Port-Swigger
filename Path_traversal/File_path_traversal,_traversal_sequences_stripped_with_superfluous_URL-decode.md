@@ -29,7 +29,7 @@
 
 - Tiếp tục thử mã hóa lần 2 trên tham số được mã hóa ở trên thì có thể xem được nội dung tệp tin.
 
-![img6](./img/lab2/img2.png)
+![img6](./img/lab4/img2.png)
 
 
 
